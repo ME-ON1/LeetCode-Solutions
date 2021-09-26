@@ -14,7 +14,7 @@ jobs :
      uses : ME-ON1/Leetcode-SyncInAction
         with :
           cookieVal : ${{ secrets.cookieVal }} # secrets.cookieVal coming from repository secret    
-          solution_location : 'path/to/directory'  # if any , default is root '.'
+          solution_location : '/main/All-Solutions'  # if any , default is root '.'
       
     # dependency, to write newly created files to the root directory of the repository.  
 
