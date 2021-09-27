@@ -3,7 +3,7 @@
 
 on: 
     schedule: 
-        - cron : '0 8 * * *' # your favourable timing
+        - cron : '0 12 * * *' # your favourable timing
 
 jobs : 
   build :
