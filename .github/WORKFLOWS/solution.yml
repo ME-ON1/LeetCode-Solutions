@@ -1,10 +1,11 @@
-- name: LeetCode-collectinator
-  uses: ME-ON1/Leetcode-SyncInAction@1.1.0
+name: LeetCode-collectinator
 
 on: 
     schedule: 
         - cron : '* 12 * * *' # your favourable timing
-
+        
+    workflow_dispatch:
+    
 jobs : 
   build :
     run-on : ubuntu-latest 
