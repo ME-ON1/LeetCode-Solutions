@@ -3,7 +3,7 @@ name: LeetCode-collectinator
 on: 
     schedule: 
         - cron : '* 12 * * *' # your favourable timing
-
+    workflow_dispatch :
 jobs : 
   build :
     run-on : ubuntu-latest 
