@@ -20,6 +20,6 @@ jobs :
     # dependency, to write newly created files to the root directory of the repository.  
 
     - name: pushing the changes!!
-    uses: stefanzweifel/git-auto-commit-action@v4
-    with:
-      commit_message: Adding new LC solutions # or anything you want to add.
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Adding new LC solutions # or anything you want to add.
