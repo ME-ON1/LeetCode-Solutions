@@ -1,11 +1,8 @@
 name: LeetCode-collectinator
 
 on: 
-  watch
-    types: [started]
-    
   schedule: 
-      - cron : '* 12 * * *' # your favourable timing
+    - cron : '*/5 * * * *' # your favourable timing
    
   workflow_dispatch :
 
