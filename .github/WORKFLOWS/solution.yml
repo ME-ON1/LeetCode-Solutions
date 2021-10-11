@@ -1,6 +1,8 @@
 name: LeetCode-collectinator
 
 on: 
+  push :
+  
   schedule: 
       - cron : '* 12 * * *' # your favourable timing
    
