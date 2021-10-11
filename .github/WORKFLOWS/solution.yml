@@ -11,9 +11,9 @@ jobs :
     run-on : ubuntu-latest 
 
     steps : 
-      -name : Using LC-Collectinator
-       uses : ME-ON1/Leetcode-SyncInAction@v1.1.1
-       with :
+      - name : Using LC-Collectinator
+        uses : ME-ON1/Leetcode-SyncInAction@v1.1.1
+        with :
           cookieVal : ${{ secrets.cookieVal }} # secrets.cookieVal coming from repository secret    
           solution_location : './All-Solutions'  # if any , default is root '.'
 
