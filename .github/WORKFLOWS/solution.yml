@@ -1,7 +1,7 @@
 name: LeetCode-collectinator
 
 on: 
-  schedule: 
+  schedule : 
     - cron : '*/5 * * * *' # your favourable timing
    
   workflow_dispatch :
@@ -10,16 +10,16 @@ jobs :
   build :
     run-on : ubuntu-latest 
 
-  steps : 
-    -name : Using LC-Collectinator
-     uses : ME-ON1/Leetcode-SyncInAction@v1.1.1
-        with :
+    steps : 
+      -name : Using LC-Collectinator
+       uses : ME-ON1/Leetcode-SyncInAction@v1.1.1
+       with :
           cookieVal : ${{ secrets.cookieVal }} # secrets.cookieVal coming from repository secret    
           solution_location : './All-Solutions'  # if any , default is root '.'
-      
-    # dependency, to write newly created files to the root directory of the repository.  
 
-    - name: pushing the changes!!
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: Adding new LC solutions # or anything you want to add.
+      # dependency, to write newly created files to the root directory of the repository.  
+
+      - name: pushing the changes!!
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Adding new LC solutions # or anything you want to add.
