@@ -11,6 +11,9 @@ jobs :
     runs-on : ubuntu-latest 
 
     steps : 
+      - name: make Directory 
+        run : 
+          mkdir -p ./All-Solutions
       - name : Using LC-Collectinator
         uses: ME-ON1/Leetcode-SyncInAction@1.1.1
         with :
