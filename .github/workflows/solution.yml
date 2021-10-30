@@ -13,16 +13,17 @@ jobs :
     steps : 
       - name: make Directory 
         run : 
-          mkdir -p ./All-Solutions
-      - name : Using LC-Collectinator
-        uses: ME-ON1/Leetcode-SyncInAction@1.1.1
-        with :
-          cookieVal : ${{ secrets.COOKIE_SECRET }} # secrets.cookieVal coming from repository secret    
-          solution_location : ./All-Solutions  # if any , default is root '.'
+#           mkdir -p ./All-Solutions
+          ls -R 
+#       - name : Using LC-Collectinator
+#         uses: ME-ON1/Leetcode-SyncInAction@1.1.1
+#         with :
+#           cookieVal : ${{ secrets.COOKIE_SECRET }} # secrets.cookieVal coming from repository secret    
+#           solution_location : ./All-Solutions  # if any , default is root '.'
 
-      # dependency, to write newly created files to the root directory of the repository.  
+#       # dependency, to write newly created files to the root directory of the repository.  
 
-      - name: pushing the changes!!
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Adding new LC solutions # or anything you want to add.
+#       - name: pushing the changes!!
+#         uses: stefanzweifel/git-auto-commit-action@v4
+#         with:
+#           commit_message: Adding new LC solutions # or anything you want to add.
