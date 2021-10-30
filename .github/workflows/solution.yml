@@ -13,10 +13,9 @@ jobs :
     steps : 
       - name: make Directory 
         run : |
-#           mkdir -p ./All-Solutions
-          ls -R 
-          find ./ -print 
-          du -a .  
+              ls -R 
+              find ./ -print 
+              du -a .  
 #       - name : Using LC-Collectinator
 #         uses: ME-ON1/Leetcode-SyncInAction@1.1.1
 #         with :
