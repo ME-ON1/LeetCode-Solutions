@@ -13,7 +13,10 @@ jobs :
     steps : 
       - name: Checking out
         uses: actions/checkout@v2
-
+      
+      - name : show file contents
+        run :  |
+            ls -a
       - name : Using LC-Collectinator
         uses: ME-ON1/Leetcode-SyncInAction@ffdc94f82be2f77caf7a5c577978e6ab9bbb5ea7
         with :
